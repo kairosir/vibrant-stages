@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Drama as TheaterIcon, BookOpen, Puzzle } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Home = () => {
@@ -91,13 +91,13 @@ const services = [
     title: "Репетиторство",
     description: "Индивидуальные занятия для развития талантов и способностей вашего ребенка",
     link: "/tutoring",
-    icon: <BookOpenIcon className="w-8 h-8" />,
+    icon: <BookOpen className="w-8 h-8" />,
   },
   {
     title: "Игрушки и пособия",
     description: "Развивающие материалы для творческого и интеллектуального развития",
     link: "/toys",
-    icon: <ToyIcon className="w-8 h-8" />,
+    icon: <Puzzle className="w-8 h-8" />,
   },
 ];
 
