@@ -15,7 +15,7 @@ jobs:
       - name: Install Node.js
         uses: actions/setup-node@v3
         with:
-          node-version: '16' # Или '20' для актуальной версии Node.js
+          node-version: '20' # Или '20' для актуальной версии Node.js
 
       - name: Install dependencies and build
         run: |
