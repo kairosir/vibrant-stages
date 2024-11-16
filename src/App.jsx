@@ -5,6 +5,8 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { navItems } from "./nav-items";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import ToyDetail from "./pages/ToyDetail";
+import ToyCategory from "./pages/ToyCategory";
 
 const queryClient = new QueryClient();
 
@@ -20,6 +22,8 @@ const App = () => (
               {navItems.map(({ to, page }) => (
                 <Route key={to} path={to} element={page} />
               ))}
+              <Route path="/toys/:id" element={<ToyDetail />} />
+              <Route path="/toys/category/:id" element={<ToyCategory />} />
             </Routes>
           </main>
           <Footer />
