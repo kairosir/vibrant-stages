@@ -20,7 +20,7 @@ jobs:
       - name: Set up Node
         uses: actions/setup-node@v3
         with:
-          node-version: '20'  # Устанавливаем Node.js версии 20
+          node-version: '20'
           cache: 'npm'
           
       - name: Install dependencies
@@ -28,7 +28,10 @@ jobs:
         
       - name: Build
         run: npm run build
-        
+
+      - name: Debug info
+        run: npm run build  # Если у вас есть дополнительная информация, проверьте логи сборки
+
       - name: Setup Pages
         uses: actions/configure-pages@v3
         
@@ -47,3 +50,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2
+      
