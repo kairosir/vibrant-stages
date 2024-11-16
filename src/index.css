@@ -42,11 +42,11 @@
 }
 
 .nav-link {
-  @apply relative text-foreground hover:text-primary transition-colors;
+  @apply relative text-foreground transition-colors;
 }
 
 .nav-link::after {
-  @apply content-[''] absolute left-0 bottom-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  @apply content-[''] absolute left-0 -bottom-1 w-0 h-0.5 bg-primary transition-all duration-300;
 }
 
 .nav-link:hover::after {
@@ -59,4 +59,41 @@
 
 .section-padding {
   @apply py-16 md:py-24;
+}
+
+/* Card hover effects */
+.hover-card {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-lg;
+}
+
+/* Gradient text */
+.gradient-text {
+  @apply bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent;
+}
+
+/* Button animations */
+.animated-button {
+  @apply transition-all duration-300 hover:scale-105 hover:shadow-md active:scale-95;
+}
+
+/* Section animations */
+.animate-on-scroll {
+  @apply opacity-0 translate-y-4 transition-all duration-500;
+}
+
+.animate-on-scroll.visible {
+  @apply opacity-100 translate-y-0;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  @apply w-2;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-gray-100;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/20 rounded-full hover:bg-primary/30;
 }
