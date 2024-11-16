@@ -1,4 +1,4 @@
-import { HomeIcon, TheaterIcon, BookOpenIcon, ToyIcon, PhoneIcon } from "lucide-react";
+import { HomeIcon, TheaterIcon, BookOpenIcon, PuzzleIcon, PhoneIcon } from "lucide-react";
 import Home from "./pages/Home";
 import Shows from "./pages/Shows";
 import Tutoring from "./pages/Tutoring";
@@ -27,7 +27,7 @@ export const navItems = [
   {
     title: "Игрушки и пособия",
     to: "/toys",
-    icon: <ToyIcon className="h-4 w-4" />,
+    icon: <PuzzleIcon className="h-4 w-4" />,
     page: <Toys />,
   },
   {
